@@ -152,7 +152,7 @@ int main(int argc, char* argv[]) {
 
     uniforms.viewport = createViewportMatrix(SCREEN_WIDTH, SCREEN_HEIGHT);
     Uint32 frameStart, frameTime;
-    std::string title = "FPS: ";
+    std::string title = "Flat Shading FPS: ";
 
     bool running = true;
     while (running) {
@@ -192,7 +192,7 @@ int main(int argc, char* argv[]) {
         // Calculate frames per second and update window title
         if (frameTime > 0) {
             std::ostringstream titleStream;
-            titleStream << "FPS: " << 1000.0 / frameTime;  // Milliseconds to seconds
+            titleStream << "Flat Shading FPS: " << 1000.0 / frameTime;  // Milliseconds to seconds
             SDL_SetWindowTitle(window, titleStream.str().c_str());
         }
     }
